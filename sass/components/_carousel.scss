@@ -1,0 +1,100 @@
+@use "../global";
+@use "../utils/variables" as var;
+
+.item {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.carousel-1 {
+  position: relative;
+}
+
+.carousel-1 .owl-dots .owl-dot span {
+  width: 30px;
+  transition: all 0.2s ease;
+}
+
+.carousel-1 .owl-dots .owl-dot.active span {
+  width: 50px;
+  background: red;
+}
+
+.carousel-1 .owl-dots .owl-dot:hover span {
+  background: red;
+}
+
+.carousel-1 .owl-nav button.owl-next,
+.carousel-1 .owl-nav button.owl-prev {
+  top: -80px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var.$secondary-color;
+  background-color: #fff;
+  &:hover {
+    background-color: var.$primary-color;
+    border: 1px solid var.$primary-color;
+  }
+}
+
+.carousel-1 .owl-nav button.owl-prev {
+  right: 60px;
+}
+
+.carousel-1 .owl-nav button.owl-next {
+  right: 0px;
+}
+
+.dish {
+  &__header {
+    &__title {
+      color: var.$primary-color;
+      font-variant-numeric: lining-nums tabular-nums;
+      font-family: "Cera Round Pro";
+      font-size: 48px;
+      font-weight: 500;
+      letter-spacing: 1.44px;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+    }
+  }
+  &__name {
+    color: var.$secondary-color;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  &__rating {
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    color: var.$primary-color;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 500px) {
+  .dish__header__title {
+    margin-bottom: 90px;
+  }
+
+  .carousel-1 .owl-nav button.owl-prev {
+    left: 0px;
+  }
+
+  .carousel-1 .owl-nav button.owl-next {
+    left: 60px;
+  }
+}
