@@ -1,0 +1,86 @@
+.dark-mode {
+  background-color: black;
+  color: #fff;
+  & section,
+  & header,
+  & footer,
+  & footer .footer__top {
+    background-color: black !important;
+    color: #fff;
+  }
+
+  .gallery .gallery__info.gallery__info__title {
+    color: #fff !important;
+  }
+
+  .news__header__title,
+  .news__header__subtitle,
+  .gallery__info__subtitle,
+  .gallery__info__title,
+  .testimony__header__title,
+  .testimony__header__subtitle,
+  .menu__header__title,
+  .nav-link,
+  .nav-pills.nav-item.nav-link,
+  .dish__header__title,
+  .navbar.navbar-expand-lg {
+    color: #fff !important;
+  }
+
+  .owl-prev,
+  .owl-next {
+    background-color: black !important;
+    border: 1px solid #fff !important;
+    &:hover {
+      background-color: #bb2339 !important;
+      border: 1px solid #bb2339 !important;
+    }
+  }
+  .tabs-1 .nav-item .nav-link {
+    background-color: black !important;
+    border: 1px solid #fff !important;
+  }
+
+  .tabs-1 .nav-item .nav-link.active {
+    background-color: red !important;
+  }
+
+  .nav-pills.nav-item.nav-link {
+    border: 1px solid white !important;
+  }
+
+  .contact__header__title {
+    color: #fff;
+  }
+
+  .form__btn {
+    background-color: #fff !important;
+    color: black !important;
+    border: 1px solid black !important;
+    &:hover {
+      background-color: #bb2339 !important;
+      color: #fff !important;
+      border: 1px solid #bb2339 !important;
+    }
+  }
+
+  .buttons__container {
+    background-color: black;
+    border: 1px solid #fff;
+    .nav-link.active {
+      color: black !important;
+    }
+  }
+
+  .about {
+    .about__body__text, .about__title {
+      color: #fff;
+    }
+  }
+
+  .navbar .nav-item .nav-link {
+    &:hover {
+      color: #bb2339 !important;
+    }
+  }
+}

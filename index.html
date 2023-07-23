@@ -22,6 +22,29 @@
     <link rel="stylesheet" href="css/home.min.css" />
   </head>
   <body>
+    <div id="backtop">
+      <a href="#">
+        <img src="assets/images/about/backtop.svg" alt="Backtop" />
+      </a>
+    </div>
+    <div id="loading">
+      <div class="loadingio-spinner-spinner-50xozt7uxsn">
+        <div class="ldio-1l3qfhb7khy">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-lg">
@@ -49,7 +72,7 @@
               class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 me-auto mb-2 mb-lg-0"
             >
               <li class="nav-item mr-40">
-                <a class="nav-link active" href="menu.html">Menu</a>
+                <a class="nav-link" href="menu.html">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="news.html">News</a>
@@ -61,7 +84,19 @@
                 <a class="nav-link" href="contact.html  ">Contact Us</a>
               </li>
               <li class="nav-item">
-                <button onclick='location.href="#"' class="nav__btn">
+                <button onclick="myFunction()" class="dark__mode">
+                  <img
+                    class="dark__light__mode"
+                    src="assets/images/home/dark-mode.svg"
+                    alt=""
+                  />
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  onclick='location.href="https://www.facebook.com/login/"'
+                  class="nav__btn"
+                >
                   Log In
                 </button>
               </li>
@@ -81,7 +116,9 @@
               volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
               aliquam amet tellus
             </p>
-            <button class="home__btn">Explore Menu</button>
+            <button onclick="location.href='menu.html'" class="home__btn">
+              Explore Menu
+            </button>
           </div>
           <div class="home__right">
             <img
@@ -1132,7 +1169,9 @@
             </div>
           </div>
           <div class="news__bottom">
-            <button class="news__btn">View More</button>
+            <button onclick="location.href='news.html'" class="news__btn">
+              View More
+            </button>
           </div>
         </div>
       </section>
@@ -1143,13 +1182,204 @@
             src="assets/images/home/video-main.png"
             alt="Video"
           />
-          <button class="play__btn">
+          <button
+            type="button"
+            class="play__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
             <img src="assets/images/home/play.svg" alt="Play" />
           </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Join Us On YouTube
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close close__btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <video width="320" height="240" controls>
+                    <source
+                      src="assets/videos/egg-video.mp4"
+                      type="video/mp4"
+                    />
+                    <source
+                      src="assets/videos/egg-video.mp4"
+                      type="video/ogg"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary close__btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container-lg gallery__container">
+          <div class="row gallery__row">
+            <div
+              class="col-12 col-lg-4 gallery__info text-center text-md-start"
+            >
+              <h3 class="gallery__info__subtitle">Instagram</h3>
+              <img
+                src="assets/images/home/news-search-vertical.svg"
+                alt="Icon"
+              />
+              <h2 class="gallery__info__title">Photo Gallery</h2>
+              <p class="gallery__info__desc text-center text-md-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
+              </p>
+              <button
+                onclick="location.href='menu.html'"
+                class="gallery__info__btn"
+              >
+                View More
+              </button>
+            </div>
+            <div class="col-12 col-lg-8 gallery__card">
+              <div class="owl-carousel owl-theme owl-two owl-three">
+                <div class="item gallery__carousel__card">
+                  <img
+                    class="gallery__img"
+                    src="assets/images/home/gallery-1.png"
+                    alt="Food"
+                  />
+                  <img
+                    class="gallery__img__hover"
+                    src="assets/images/home/instagram-hover.svg"
+                    alt="Instagram"
+                  />
+                </div>
+                <div class="item gallery__carousel__card">
+                  <img
+                    class="gallery__img"
+                    src="assets/images/home/gallery-2.png"
+                    alt="Food"
+                  />
+                  <img
+                    class="gallery__img__hover"
+                    src="assets/images/home/instagram-hover.svg"
+                    alt="Instagram"
+                  />
+                </div>
+                <div class="item gallery__carousel__card">
+                  <img
+                    class="gallery__img"
+                    src="assets/images/home/gallery-3.png"
+                    alt="Food"
+                  />
+                  <img
+                    class="gallery__img__hover"
+                    src="assets/images/home/instagram-hover.svg"
+                    alt="Instagram"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container-lg footer__container">
+        <div class="footer__top">
+          <div class="footer__top__info">
+            <h3 class="footer__subtitle">Newsletter</h3>
+            <h2 class="footer__title">Subscribe to Our Newsletter</h2>
+            <p class="footer__reminder">And never miss latest Updates!</p>
+          </div>
+          <div class="footer__input">
+            <input
+              class="form-control shadow-none subscribe__input"
+              type="email"
+              placeholder="Email Address"
+            />
+            <button type="submit" class="footer__btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="row footer__row row">
+            <div class="col-12 col-md-6 col-lg-4 text-center footer__contact">
+              <h3 class="footer__contact__title">Contact Us</h3>
+              <p class="footer__contact__desc">
+                9 W 53rd St, London, NY 10019, UK
+              </p>
+              <p class="footer__contact__desc">
+                +1 212-344-1230<br />
+                +1 212-555-1230
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center footer__contact">
+              <img src="assets/images/home/logo-footer.svg" alt="footer" />
+              <p class="footer__contact__desc footer__desc__2">
+                "The best way to find yourself is to lose yourself in the
+                service of others.”
+              </p>
+              <div class="footer__contact__logos">
+                <a href="https://www.instagram.com/">
+                  <img
+                    src="assets/images/home/instagram-footer.svg"
+                    alt="Instagram"
+                  />
+                </a>
+                <a href="https://www.facebook.com/">
+                  <img
+                    src="assets/images/home/facebook-footer.svg"
+                    alt="facebook"
+                  />
+                </a>
+                <a href="https://www.twitter.com/">
+                  <img
+                    src="assets/images/home/twitter-footer.svg"
+                    alt="Twitter"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center footer__contact">
+              <h3 class="footer__contact__title">Working Hours</h3>
+              <p class="footer__contact__desc">
+                Monday-Friday:<br />
+                08:00 am -12:00 am
+              </p>
+              <p class="footer__contact__desc">
+                Saturday-Sunday:<br />
+                07:00am -11:00 pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright__info">
+            2022 Pop online. All Rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer><script src="js/secondary.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"

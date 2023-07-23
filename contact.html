@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="sass/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/contact.min.css" />
+  </head>
+  <body>
+    <div id="backtop">
+      <a href="#">
+        <img src="assets/images/about/backtop.svg" alt="Backtop" />
+      </a>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-lg">
+          <div class="nav__logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/home/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav-jc"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 me-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item mr-40">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html  ">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <button onclick="myFunction()" class="dark__mode">
+                  <img
+                    class="dark__light__mode"
+                    src="assets/images/home/dark-mode.svg"
+                    alt=""
+                  />
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  onclick='location.href="https://www.facebook.com/login/"'
+                  class="nav__btn navbar-shrink"
+                >
+                  Log In
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact">
+        <div class="container-lg contact__container">
+          <nav class="breadcrumb__nav" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact Us
+              </li>
+            </ol>
+          </nav>
+          <div class="contact__header">
+            <h2 class="contact__header__title">Contact Us</h2>
+            <img
+              class="contact__header__img"
+              src="assets/images/home/news-search-vertical.svg"
+              alt="News Search"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="home">
+        <div class="container-lg home__container">
+          <div class="home__left">
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img
+                  class="circle__frame"
+                  src="assets/images/contact/circle.svg"
+                  alt="Circle"
+                />
+                <img
+                  class="phone__img"
+                  src="assets/images/contact/phone.svg"
+                  alt="Phone"
+                />
+              </div>
+              <div class="contact__card__info">
+                <h3 class="contact__card__title">Phone Number</h3>
+                <p class="contact__card__number">+1 212-344-1230</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img
+                  class="circle__frame"
+                  src="assets/images/contact/circle.svg"
+                  alt="Circle"
+                />
+                <img
+                  class="phone__img"
+                  src="assets/images/contact/mail.svg"
+                  alt="Phone"
+                />
+              </div>
+              <div class="contact__card__info">
+                <h3 class="contact__card__title">Email Address</h3>
+                <p class="contact__card__number">eaturkish@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img
+                  class="circle__frame"
+                  src="assets/images/contact/circle.svg"
+                  alt="Circle"
+                />
+                <img
+                  class="phone__img"
+                  src="assets/images/contact/instagram.svg"
+                  alt="Phone"
+                />
+              </div>
+              <div class="contact__card__info">
+                <h3 class="contact__card__title">Instagram</h3>
+                <p class="contact__card__number">eaturkish</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img
+                  class="circle__frame"
+                  src="assets/images/contact/circle.svg"
+                  alt="Circle"
+                />
+                <img
+                  class="phone__img"
+                  src="assets/images/contact/twitter.svg"
+                  alt="Phone"
+                />
+              </div>
+              <div class="contact__card__info">
+                <h3 class="contact__card__title">Twitter</h3>
+                <p class="contact__card__number">eaturkish</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img
+                  class="circle__frame"
+                  src="assets/images/contact/circle.svg"
+                  alt="Circle"
+                />
+                <img
+                  class="phone__img"
+                  src="assets/images/contact/facebook.svg"
+                  alt="Phone"
+                />
+              </div>
+              <div class="contact__card__info">
+                <h3 class="contact__card__title">Facebook</h3>
+                <p class="contact__card__number">eaturkish</p>
+              </div>
+            </div>
+          </div>
+          <div class="home__right">
+            <form id="contact_aab" class="form">
+              <div class="form__header">
+                <h2 class="form__header__title">Send Messege</h2>
+                <p class="form__header__desc">
+                  If you have any questions, you can send us an SMS or contact
+                  us by phone you can also contact us via social networks.
+                </p>
+              </div>
+              <div class="form__body">
+                <div class="form__body__row">
+                  <input
+                    class="form-control shadow-none"
+                    required
+                    type="text"
+                    placeholder="Your name"
+                  />
+                  <input
+                    class="form-control shadow-none"
+                    required
+                    type="email"
+                    placeholder="Email address"
+                  />
+                </div>
+                <div class="form__body__row">
+                  <input
+                    class="form-control shadow-none"
+                    type="text"
+                    required
+                    placeholder="Phone number"
+                  />
+                  <input
+                    class="form-control shadow-none"
+                    type="text"
+                    required
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control shadow-none textarea-1"
+                    id="exampleFormControlTextarea1"
+                    rows="8"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form__bottom">
+                <button class="form__btn" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container-lg map__container">
+          <h2 class="map__title">Find us by card</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.631177981796!2d-71.12082372451596!3d42.37443677119154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377427d7f0199%3A0x5937c65cee2427f0!2sHarvard%20University!5e1!3m2!1sen!2s!4v1690124671712!5m2!1sen!2s"
+            width="100%"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-lg footer__container">
+        <div class="footer__top">
+          <div class="footer__top__info">
+            <h3 class="footer__subtitle">Newsletter</h3>
+            <h2 class="footer__title">Subscribe to Our Newsletter</h2>
+            <p class="footer__reminder">And never miss latest Updates!</p>
+          </div>
+          <div class="footer__input">
+            <input
+              class="form-control subscribe__input shadow-none"
+              type="email"
+              placeholder="Email Address"
+            />
+            <button type="submit" class="footer__btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="row footer__row row">
+            <div class="col-12 col-md-6 col-lg-4 text-center mb-5 mb-sm-0 footer__contact">
+              <h3 class="footer__contact__title">Contact Us</h3>
+              <p class="footer__contact__desc">
+                9 W 53rd St, London, NY 10019, UK
+              </p>
+              <p class="footer__contact__desc">
+                +1 212-344-1230<br />
+                +1 212-555-1230
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center mb-5 mb-sm-0 footer__contact">
+              <img src="assets/images/home/logo-footer.svg" alt="footer" />
+              <p class="footer__contact__desc footer__desc__2">
+                "The best way to find yourself is to lose yourself in the
+                service of others.”
+              </p>
+              <div class="footer__contact__logos">
+                <a href="https://www.instagram.com/">
+                  <img
+                    src="assets/images/home/instagram-footer.svg"
+                    alt="Instagram"
+                  />
+                </a>
+                <a href="https://www.facebook.com/">
+                  <img
+                    src="assets/images/home/facebook-footer.svg"
+                    alt="facebook"
+                  />
+                </a>
+                <a href="https://www.twitter.com/">
+                  <img
+                    src="assets/images/home/twitter-footer.svg"
+                    alt="Twitter"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center mb-5 mb-sm-0 footer__contact">
+              <h3 class="footer__contact__title">Working Hours</h3>
+              <p class="footer__contact__desc">
+                Monday-Friday:<br />
+                08:00 am -12:00 am
+              </p>
+              <p class="footer__contact__desc">
+                Saturday-Sunday:<br />
+                07:00am -11:00 pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright__info">
+            2022 Pop online. All Rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/secondary.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
